@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "576703799458",
+    "project_id": "farmington-vendor-store",
+    "storage_bucket": "farmington-vendor-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576703799458:android:96f2d47b7014b6d4b8f7fb",
+        "android_client_info": {
+          "package_name": "com.clg.farmington"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576703799458-q21hjc5288rndg89mggs769njqk8ce6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFUWng9x6owjusb7tmKOd8kva5t5RlvYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576703799458-q21hjc5288rndg89mggs769njqk8ce6g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

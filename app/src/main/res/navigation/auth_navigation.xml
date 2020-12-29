@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_navigation"
+    app:startDestination="@id/welcomeFrag">
+
+    <fragment
+        android:id="@+id/loginFrag"
+        android:name="com.clg.farmington.fragments.LoginFrag"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/registrationFrag"
+        android:name="com.clg.farmington.fragments.RegistrationFrag"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/welcomeFrag"
+        android:name="com.clg.farmington.fragments.WelcomeFrag"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFrag_to_registrationFrag"
+            app:destination="@id/registrationFrag" />
+        <action
+            android:id="@+id/action_welcomeFrag_to_loginFrag"
+            app:destination="@id/loginFrag" />
+    </fragment>
+</navigation>

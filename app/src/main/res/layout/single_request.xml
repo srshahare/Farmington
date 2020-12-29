@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/req_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/card">
+
+    <TextView
+        android:id="@+id/req_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Buyer Name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/req_prod_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/req_prod_image"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card" />
+
+    <TextView
+        android:id="@+id/req_prod_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fresh Tomatos Directly From The Farm To Your Home"
+        android:textColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="@+id/req_user_name"
+        app:layout_constraintStart_toStartOf="@+id/req_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/req_user_name" />
+
+    <TextView
+        android:id="@+id/req_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 12Kg \nWaiting Time: 4 Hrs"
+        app:layout_constraintEnd_toEndOf="@+id/req_prod_name"
+        app:layout_constraintStart_toStartOf="@+id/req_prod_name"
+        app:layout_constraintTop_toBottomOf="@+id/req_prod_name" />
+
+    <Button
+        android:id="@+id/req_accept"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/card3"
+        android:text="Accept"
+        app:backgroundTint="@android:color/transparent"
+        app:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/req_reject"
+        app:layout_constraintStart_toStartOf="@+id/req_details"
+        app:layout_constraintTop_toBottomOf="@+id/req_details" />
+
+    <Button
+        android:id="@+id/req_reject"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/card1"
+        android:text="Reject"
+        app:backgroundTint="@android:color/transparent"
+        app:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/req_accept"
+        app:layout_constraintTop_toTopOf="@+id/req_accept" />
+</androidx.constraintlayout.widget.ConstraintLayout>
